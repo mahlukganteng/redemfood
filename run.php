@@ -39,14 +39,14 @@ if ($register == false)
       else
         {
         file_put_contents("token/".$verif['data']['customer']['name'].".txt", $verif['data']['access_token']);
-        echo "\e[96m[!] Trying to redeem Voucher : GOFOODBOBA07 !\n";
+        echo "\e[96m[!] Trying to redeem Voucher : HARIJADIMART !\n";
         sleep(3);
         $claim = claim($verif);
         if ($claim == false)
             {
             echo "\e[96m[!]".$voucher."\n";
             sleep(3);
-            echo "\e[96m[!] Trying to redeem Voucher : GOFOODBOBA10 !\n";
+            echo "\e[96m[!] Trying to redeem Voucher : HARIJADIMART !\n";
             sleep(3);
             goto next;
             }
